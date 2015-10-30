@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>requireJS problem</title>
+    <style>html,body {padding:30px;font-family: Helvetica;}</style>
+</head>
+<body ng-controller="AppController">
+
+    <select ng-model="currentLang" ng-change="changeLanguage(currentLang)" style="margin-bottom:20px;width:150px;">
+        <option value="en">EN</option>
+        <option value="de">DE</option>
+    </select>
+
+
+    <p>Test: <span translate>RESOURCE_KEY</span></p>
+    
+
+
+    <script src="./assets/libs/requirejs/require.js" data-main="app/config.js"></script>
+    <!-- <script src="app/build.js" async></script> -->
+</body>
+</html>
